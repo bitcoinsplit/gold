@@ -3,6 +3,7 @@ var unlisted = tocheck.trim().split(' ');
 if(unlisted.length>0){
 seed = bip39.mnemonicToSeed(tocheck.trim());
 root = bitcoin.HDNode.fromSeedBuffer(seed);
+console.log(seed);
 gpuaddress = [];
 rootgpu = bitcoin.HDNode.fromSeedBuffer(seed,bitcoin.networks.bgold);
 var i = 0;var listaddress='';
