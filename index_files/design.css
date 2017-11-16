@@ -1,0 +1,46 @@
+*{margin:0;padding:0;border:0;}
+html{height:100%;}
+body{min-height:100%;background:#FFFFFF url('back.jpg') no-repeat 0 0;color:#333333;font-size:12px;font-family: 'Roboto',  Arial, Helvetica, sans-serif;line-height:1.8em;text-rendering:optimizeLegibility;font-smooth:always;font-smoothing:antialiased;-moz-font-smoothing:antialiased;-webkit-font-smoothing:antialiased;-webkit-font-smoothing:subpixel-antialiased;}
+.aa{margin:0 auto;padding-top:30px;min-height:250px;padding:30px;border:1px solid #CCCCCC;}
+.flexc{flex:1;display:flex;margin:10px 10px 0 10px;background:#F0F0F0;}
+
+.adv{font-size:12px;text-align:center;border-top:1px solid #C8423E;padding:5px;background:#D9534F;color:#FFFFFF;margin:15px 10px 0;border-radius:3px;}
+.info{font-size:12px;text-align:center;border-top:1px solid #3471DB;padding:5px;background:#4582EC;color:#FFFFFF;margin:15px 10px;border-radius:3px;}
+
+.flex1{flex-grow:1;padding:10px;cursor:pointer;border:1px solid #E0E0E0;}
+.flex2{flex-grow:1;padding:10px;cursor:pointer;border:1px solid #E0E0E0;border-left:0;}
+.flex3{flex-grow:1;padding:10px;cursor:pointer;border:1px solid #E0E0E0;border-left:0;}
+.flex1:hover,.flex2:hover,.flex3:hover{background:#F6F6F6;}
+.flexa{background:#FFFFFF;border-bottom:0;font-weight:bold;color:#EBA809;font-size:14px;}
+
+#header .image {display:inline-block;margin-left:20px;}
+#header .center {display:inline-block;vertical-align:middle;width:70%;text-align:center;}
+#header img {vertical-align:middle;}
+.textcenter{text-align:center;}
+
+#seed{width:calc(100% - 31px);font-size:12px;padding:9px 13px 10px;background:#FFFFFF;border:1px solid #DDDDDD;overflow:hidden;}
+#seed::placeholder{color:#999999;}
+#seed::placeholder-shown{border:1px solid #CCCCCC;}
+
+#createwallet{display:none;}
+
+
+td{padding:0;margin:0;vertical-align:top;}
+select,input{padding:9px 13px;background:#FFFFFF;border:1px solid #DDDDDD;font-size:11px;}
+select{cursor:pointer;}
+button{position:absolute;right:0;top:0;width:20%;padding:9px 12px;font-weight:bold;cursor:pointer;background:#EBA809;border:1px solid #C98607;transition:all 1s;color:#FFFFFF;}
+button:hover{background:#FFCB4B;border:1px solid #CD9818;}
+
+#dontcopy{text-align:center;}
+
+#sendfunds{width:15%;background:rgba(86, 168, 70, 0.75);border-radius:2px;cursor:pointer;font-size:1.5em;color:#FFF;box-shadow:0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);vertical-align:middle;}
+#newseed{width:calc(100% - 20px);background:rgba(86, 168, 70, 0.75);border-radius:2px;padding:10px;text-align:center;color:#FFF;box-shadow:0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);font-size:20px;}
+#sendfunds:hover{background:rgba(86, 168, 70, 0.55)}
+
+#receivefunds{width:15%;background:rgba(200, 66, 62, 0.75);border-radius:2px;cursor:pointer;font-size:1.5em;color:#FFF;box-shadow:0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);vertical-align:middle;}
+#receivefunds:hover{background:rgba(200, 66, 62, 0.55);}
+
+#importseed,#createwallet{margin:0 10px;border:1px solid #E0E0E0;border-top:0;background:#fdfcfc;padding:10px;}
+#importseed table{width:100%;}
+
+#endweb{background:#FFFFFF;border-top:1px solid #CCCCCC;padding:5px;text-align:center;font-style:italic;position:fixed;bottom:0;left:0;}
