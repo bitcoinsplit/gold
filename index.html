@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://mybitgold.github.io/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MyBitGold: Bitcoin Gold Wallet</title>
+
+<meta name="description" content="Create your Bitcoin Gold Address or use our tool for Claim the BTG with your Bitcoin Seed, in your browser (can run locally)">
+<link href="./index_files/css" rel="stylesheet">
+<link rel="shortcut icon" href="https://mybitgold.github.io/favicon.png">
+<link rel="stylesheet" href="./index_files/design.css">
+<style></style><style media="print" class="jx_ui_StyleSheet" __jx__id="___$_2" type="text/css">.zopim { display: none !important }</style><script style="display: none;">var tvt = tvt || {}; tvt.captureVariables = function (a){for(var b=new Date,c={},d=Object.keys(a||{}),e=0,
+f;f=d[e];e++)if(a.hasOwnProperty(f)&&"undefined"!=typeof a[f])try{var g=[];c[f]=JSON.stringify(a[f],function(a,b){try{if("function"!==typeof b){if("object"===typeof b&&null!==b){if(b instanceof HTMLElement||b instanceof Node||-1!=g.indexOf(b))return;g.push(b)}return b}}catch(N){}})}catch(l){}a=document.createEvent("CustomEvent");a.initCustomEvent("TvtRetrievedVariablesEvent",!0,!0,{variables:c,date:b});window.dispatchEvent(a)};window.setTimeout(function() {tvt.captureVariables({'dataLayer': window['dataLayer']})}, 2000);</script></head>
+<body><div class="zopim" __jx__id="___$_11 ___$_11" data-test-id="ChatWidgetButton" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; border: 0px; background: transparent; overflow: hidden; position: fixed; z-index: 16000002; width: 180px; height: 30px; right: 10px; bottom: 0px; display: none;"><iframe frameborder="0" src="./index_files/saved_resource.html" style="background-color: transparent; vertical-align: text-bottom; position: relative; width: 100%; height: 100%; min-width: 100%; min-height: 100%; max-width: 100%; max-height: 100%; margin: 0px; overflow: hidden; display: block;" data-test-id="ChatWidgetButton-iframe"></iframe></div><div class="zopim" __jx__id="___$_4 ___$_4" data-test-id="ChatWidgetWindow" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; border: 0px; background: transparent; overflow: hidden; position: fixed; z-index: 16000001; right: 10px; bottom: 0px; border-top-left-radius: 5px; border-top-right-radius: 5px; display: none; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px 2px;"><iframe frameborder="0" src="./index_files/saved_resource(1).html" data-test-id="ChatWidgetWindow-iframe" style="background-color: transparent; vertical-align: text-bottom; position: relative; width: 100%; height: 100%; min-width: 100%; min-height: 100%; max-width: 100%; max-height: 100%; margin: 0px; overflow: hidden; display: block;"></iframe></div>
+<div class="aa">
+
+
+<div class="info">
+This site is <strong>Open Source</strong> and runs on just Javascript and HTML. You can Download the entire code on my <a href="https://github.com/mybitgold/mybitgold.github.io" rel="nofollow" target="_blank">GitHub</a> and run it on your computer!.
+</div>
+
+<div class="flexc">
+<div class="flex1 center" id="forcreatewallet">Create a New Wallet</div>
+
+<div class="flex3 center flexa" id="forimportseed">Import BTG from BTC Seed</div>
+</div>
+
+<div id="createwallet" class="showopt" style="display: none;">
+<span id="seedimport"><h2>New Bitcoin Gold Seed Created!</h2></span>
+<div class="dontcopy">Copy this and... DONT SHARE WITH ANY OTHER. SAVE IT IN A SAFE PLACES.</div>
+<div id="newseed">course still rubber copper creek print awesome inspire hat strike bulb motion</div>
+<div class="textcenter">After you write this seed in another place. Copy and go to "Import a BTG Wallet"</div>
+</div>
+
+<div id="importseed" class="showopt" style="">
+<span id="seedimport"><h2>Import Bitcoin Gold from Bitcoin Mnemonic</h2></span>
+<span id="toolimport">This tool work with BIP44/BIP39, so it's compatible with wallets like Jaxx, Mycelium, or Copay.</span>
+<table style="border-collapse:collapse;">
+<tbody><tr>
+<td style="width:170px;">
+<span id="selectwallet">Select Wallet Type:</span><br>
+<select name="wallet" id="walletpath" style="width:170px;">
+<option value="1">Jaxx (BIP44)</option>
+<option value="1">Mycelium (BIP44)</option>
+<option value="5">Electrum</option>
+ <option value="1">Blockchain.info (Recovery Phrase)</option>
+<option value="1">Coinomi (BIP44)</option>
+<option value="1">Copay (BIP44)</option>
+<option value="1">Trezor / Ledger (BIP44)</option>
+<option value="1">Samourai (BIP44)</option>
+<option value="2" selected="selected">Other BIP44</option>
+<option value="3">Other BIP39</option>
+<option value="4">Other BIP49</option>
+</select>
+</td>
+<td style="width:80px;display:none;">
+Derivation Path:<br>
+<input id="derivationpath" type="text" disabled="disabled" value="m/44&#39;/0&#39;/0&#39;" style="width:80px;">
+</td>
+<td>
+Seed Mnemonic: (12, 18, 24 Words)
+<div style="position:relative;"><input type="text" id="seed" placeholder="Example: clay dinosaur rival achieve hurt voyage come cram leaf boat close stairs soda entire apple surprise fine exhaust" style="border: 1px dashed rgb(204, 204, 204);">
+<button>CHECK BALANCE</button></div>
+</td>
+</tr>
+</tbody></table>
+
+<table class="center" style="border-bottom:1px solid #CCCCCC;margin:10px 0;text-align:center;">
+<tbody><tr>
+<td id="sendfunds">Send BTG</td>
+<td id="receivefunds">Receive BTG</td>
+<td style="width:25%;background:#CCCCCC;border:1px solid #BBBBBB;border-radius:3px;padding:5px;">BTC Balance<br><span id="btcbalance" style="font-size:2em;">0.00000000</span></td>
+<td style="width:25%;background:#EBA809;border:1px solid #CCCCCC;border-radius:3px;padding:5px;color:#FFFFFF;">BTG Balance<br><span id="btgbalance" style="font-size:2em;">0.00000000</span></td>
+</tr>
+</tbody></table>
+
+<table id="seedlist">
+<thead>
+<tr>
+<td style="width:27%;">Address BTC:</td>
+<td style="width:27%;">Address BTG:</td>
+<td>N. Tx:</td>
+<td style="width:18%;">BTC Balance:</td>
+<td style="width:18%;">BTG Balance:</td>
+</tr>
+</thead>
+<tbody><tr><td class="address"><img src="./index_files/arrow.png" width="16">17Hrmw6HLe8utcse5Guaki6PtCUkhqwcJt</td><td>GQ8nC4REKVkCy6Aw1DZhBUSHoNGbfurG4X</td><td>0</td><td>0.00000000</td><td id="17Hrmw6HLe8utcse5Guaki6PtCUkhqwcJtbtg">0.00000000</td></tr><tr><td class="address"><img src="./index_files/arrow.png" width="16">1NWhwUYGfNPcPDSdb8FD84QbFXk4PdDftm</td><td>GfMdMbsDeDzuTgjvX4uKYpkVAhXuTscG2P</td><td>0</td><td>0.00000000</td><td id="1NWhwUYGfNPcPDSdb8FD84QbFXk4PdDftmbtg">0.00000000</td></tr><tr><td class="address"><img src="./index_files/arrow.png" width="16">1H7RDZjnDc1eSTbBorKbfMs8HLLvNs4532</td><td>GZxLdh4jCTcwWvtUjnyi68D2CW8mKf6d7s</td><td>0</td><td>0.00000000</td><td id="1H7RDZjnDc1eSTbBorKbfMs8HLLvNs4532btg">0.00000000</td></tr><tr><td class="address"><img src="./index_files/arrow.png" width="16">1GFDwomBZkCWFxZ6jpjM9d74nAHgfC2W1P</td><td>GZ69Mw68YbooLRrPfmPTaPSxhL5Xignezb</td><td>0</td><td>0.00000000</td><td id="1GFDwomBZkCWFxZ6jpjM9d74nAHgfC2W1Pbtg">0.00000000</td></tr><tr><td class="address"><img src="./index_files/arrow.png" width="16">1PP5qFFEkqfbkSy5FTM3ZZY67jnAwDhYd</td><td>GJEJVxaCDcSxgDkG1C7TUKuS1HXdADePqZ</td><td>0</td><td>0.00000000</td><td id="1PP5qFFEkqfbkSy5FTM3ZZY67jnAwDhYdbtg">0.00000000</td></tr><tr><td class="address"><img src="./index_files/arrow.png" width="16">1CVLUPnqjeymDDaPNznyfj4vZm96PUpKTu</td><td>GVLFtX7niWb4HgsgJwT66VQpUvvwL3PeFz</td><td>0</td><td>0.00000000</td><td id="1CVLUPnqjeymDDaPNznyfj4vZm96PUpKTubtg">0.00000000</td></tr><tr><td class="address"><img src="./index_files/arrow.png" width="16">19KYv62ieHDDAVK9iUbKFeY9BPbm9vwEPT</td><td>GSAULDMfd8pWExcSeRFRgQt36ZPc8rbnsa</td><td>0</td><td>0.00000000</td><td id="19KYv62ieHDDAVK9iUbKFeY9BPbm9vwEPTbtg">0.00000000</td></tr><tr><td class="address"><img src="./index_files/arrow.png" width="16">1JgcjLYKt5UqYTea5XjrK2LDY6sxrSb64x</td><td>GbXY9TsGrw68cvws1UPxjng7TGfouqAb9F</td><td>0</td><td>0.00000000</td><td id="1JgcjLYKt5UqYTea5XjrK2LDY6sxrSb64xbtg">0.00000000</td></tr><tr><td class="address"><img src="./index_files/arrow.png" width="16">15DBJJTAMzSrNvxXtiTp3W9FyYjvBGSP2k</td><td>GN46iRn7Lr49TQFppf7vUGV9tiXmFdZJ5F</td><td>0</td><td>0.00000000</td><td id="15DBJJTAMzSrNvxXtiTp3W9FyYjvBGSP2kbtg">0.00000000</td></tr><tr><td class="address"><img src="./index_files/arrow.png" width="16">1PkiYPkDBUaz2Dc2v9K9Drh2amdHat8sLx</td><td>GgbdxX5AALCH6guKr5yFed2vVwR8b8jMP9</td><td>0</td><td>0.00000000</td><td id="1PkiYPkDBUaz2Dc2v9K9Drh2amdHat8sLxbtg">0.00000000</td></tr><tr><td class="address"><img src="./index_files/arrow.png" width="16">1PJbyAGgtzG8AqCTnAZnopN61yKP5LQcVZ</td><td>Gg9XPHbdsqsRFJVki7DuEahyw97E4tWfJy</td><td>0</td><td>0.00000000</td><td id="1PJbyAGgtzG8AqCTnAZnopN61yKP5LQcVZbtg">0.00000000</td></tr><tr><td class="address"><img src="./index_files/arrow.png" width="16">1CdwEBvypL9rk3xDCPAZ7JitFw59d3Mwet</td><td>GVUreKFvoBm9pXFW8KpfY54nB6rzj6K1BE</td><td>0</td><td>0.00000000</td><td id="1CdwEBvypL9rk3xDCPAZ7JitFw59d3Mwetbtg">0.00000000</td></tr><tr><td class="address"><img src="./index_files/arrow.png" width="16">1Bi2iRTM7nbx939e2F7TpuVaRK6mngAHJ</td><td>GJ2dSqkQKyPu2cLSZxuDtbFPVb6wq8XYFk</td><td>0</td><td>0.00000000</td><td id="1Bi2iRTM7nbx939e2F7TpuVaRK6mngAHJbtg">0.00000000</td></tr><tr><td class="address"><img src="./index_files/arrow.png" width="16">1Kd1NWyG145awLMDGRQhAyvxhzDnJVTjd4</td><td>GcTvneJCyugt1oeWCN4obkGrdA1dNKAoJ8</td><td>0</td><td>0.00000000</td><td id="1Kd1NWyG145awLMDGRQhAyvxhzDnJVTjd4btg">0.00000000</td></tr><tr><td class="address"><img src="./index_files/arrow.png" width="16">19fM1PRHNArbva15JHZutxZzWynt9KWJ29</td><td>GSWGRWkEM2Tu13JNEEE2KiutS9aj7k39bC</td><td>0</td><td>0.00000000</td><td id="19fM1PRHNArbva15JHZutxZzWynt9KWJ29btg">0.00000000</td></tr><tr><td class="address"><img src="./index_files/arrow.png" width="16">1GUyDnqJtqXsPzGxZ7rj6d6PL2VJLetvcC</td><td>GZKtdvAFsh9AUTaFV4WqXPSHFCH9MZXWd6</td><td>0</td><td>0.00000000</td><td id="1GUyDnqJtqXsPzGxZ7rj6d6PL2VJLetvcCbtg">0.00000000</td></tr><tr><td class="address"><img src="./index_files/arrow.png" width="16">1ErLvHTD2dsVi1aUjVAbUaFaAMJQ2rBwJC</td><td>GXhGLQnA1VUnnUsmfRphuLbU5X6F2FXh5J</td><td>0</td><td>0.00000000</td><td id="1ErLvHTD2dsVi1aUjVAbUaFaAMJQ2rBwJCbtg">0.00000000</td></tr><tr><td class="address"><img src="./index_files/arrow.png" width="16">13ZVNPr6E3tvX86z7PqKdwVq24ED5F6BZ1</td><td>GLQQnXB3CuWDbbQH3LVS4hqiwE24BVWeKe</td><td>0</td><td>0.00000000</td><td id="13ZVNPr6E3tvX86z7PqKdwVq24ED5F6BZ1btg">0.00000000</td></tr><tr><td class="address"><img src="./index_files/arrow.png" width="16">1686op2zh9GffaALVvCpGuXdLEWbvnpD5q</td><td>GNy2DwMwfzsxk3TdRrrvhfsXFQJSu4f3yR</td><td>0</td><td>0.00000000</td><td id="1686op2zh9GffaALVvCpGuXdLEWbvnpD5qbtg">0.00000000</td></tr><tr><td class="address"><img src="./index_files/arrow.png" width="16">14NgFEWkQTYQ8NHV5BFHfzEekEvvYTkPF6</td><td>GMDbfMqhPK9hCqan17uQ6kaYfQimWAfHzr</td><td>0</td><td>0.00000000</td><td id="14NgFEWkQTYQ8NHV5BFHfzEekEvvYTkPF6btg">0.00000000</td></tr></tbody>
+</table>
+
+</div>
+
+
+
+</div>
+
+<div id="endweb" style="position: static;">
+<div style="width:calc(33% - 40px);margin:10px 0;display:inline-block;padding:5px 10px;vertical-align:top;"><h3><u>This project is 100% open-source code</u></h3>You can download the master branch at <a href="https://github.com/mybitgold/mybitgold.github.io" rel="nofollow" target="_blank">github reposity</a>. This project is not finished but is stable for checking balances. When Bitcoin Gold Team release nodes and more information i will finish this adding the option of Create New Seed / Wallet and the option to Transfer funds of BTG from Here!.</div>
+
+<div style="width:calc(33% - 40px);margin:10px 0;display:inline-block;padding:5px 10px;vertical-align:top;"><h3><u>About me:</u></h3>My nickname is JohnBass, an "enthusiasm developer of Open Source Website Proyects and really interested in the Blockchain Technology". My projects are created without any type of profit, so if you want help me you can Donate to: <strong>13S1ws9cdMPZZ4Br7cC5HDdo9YyHXHtxeZ</strong></div>
+
+<div style="width:calc(33% - 40px);margin:10px 0;display:inline-block;padding:5px 10px;vertical-align:top;"><h3><u>Libraries and Credits:</u></h3><strong>jQuery</strong>: <a href="https://jquery.com/" rel="nofollow">https://jquery.com</a><br><strong>BitcoinJS</strong>: <a href="https://github.com/bitcoinjs/bitcoinjs-lib" rel="nofollow">https://github.com/bitcoinjs/bitcoinjs-lib</a><br><strong>Bip39 by BitcoinJS</strong>: <a href="https://github.com/bitcoinjs/bip39" rel="nofollow">https://github.com/bitcoinjs/bip39</a><br><br><strong>Special Credits to <a href="https://github.com/iancoleman/" rel="nofollow">Ian Coleman</a></strong>, part of this project is based in his public tool for Bip39.</div>
+</div>
+
+<script async="" charset="utf-8" src="./index_files/saved_resource" type="text/javascript"></script><script type="text/javascript" src="./index_files/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./index_files/bitcoinjs.min.js"></script>
+<script type="text/javascript" src="./index_files/bip39.min.js"></script>
+<script type="text/javascript" src="./index_files/application.js"></script>
+
+
+
+
+</body></html>
